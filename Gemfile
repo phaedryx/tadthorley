@@ -28,3 +28,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'thin', '~> 1.7', '>= 1.7.2'
 end
+
+group :production do
+  gem 'puma', '~> 3.9', '>= 3.9.1'
+end
