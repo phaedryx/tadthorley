@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <title>Tadthorley</title>
     <%= csrf_meta_tags %>
@@ -10,9 +10,11 @@
   </head>
 
   <body>
-    <div class="row">
-      <div class="small-12 columns">
+    <div id="container" class="row">
+      <div class="small-11 small-centered columns">
+        <%= render 'shared/header' %>
         <%= yield %>
+        <%= render 'shared/footer' %>
       </div>
     </div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
